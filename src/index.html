@@ -14,8 +14,22 @@
       <button id="show-popup-form" class="btn btn-main">Click me!</button>
       <!-- Display success message below -->
     </section>
-    <div class="popup">
-      <!-- Here goes your popup form HTML code -->
+    <div class="popup hidden">
+      <form class="popup-form">
+        <div class="close-btn">
+          <img src="./images/close.svg" alt="close">
+        </div>
+        <h1 class="header">Login</h1>
+        <input type="text" name="eamil" class="email-input form-input" placeholder="E-mail"/>
+        <input type="password" name="password" class="password-input form-input" placeholder="Password"/>
+        <label>
+          <input type="checkbox" name="checkbox"/>
+          <span class="custom-checkbox"></span>
+          I agree to terms & conditions.
+        </label>
+        <button class="submit-btn">SUBMIT</button>
+      </form>
+
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
